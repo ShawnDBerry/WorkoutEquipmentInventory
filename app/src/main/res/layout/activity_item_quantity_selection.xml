@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemQuantitySelectionActivity">
+
+    <TextView
+        android:id="@+id/equipment_selection_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/equipment_quantity_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="DumbBells"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/equipment_quantity_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/enter_your_desired_amount_text"
+        android:textSize="24sp"
+        android:maxLength="2"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/equipment_quantity_select_button"
+        app:layout_constraintTop_toBottomOf="@id/equipment_selection_textview"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/equipment_quantity_select_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:text="@string/select_equipment_btn_text"
+        app:layout_constraintTop_toBottomOf="@id/equipment_quantity_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
